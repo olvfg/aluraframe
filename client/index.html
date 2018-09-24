@@ -5,6 +5,7 @@
     <title>Negociações</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/index.css">
     
 </head>
 <body class="container">
@@ -58,6 +59,12 @@
         <tfoot>
         </tfoot>
     </table>
-    <script src="js/index.js"></script>
+    <script src="js/app/models/Negociacao.js"></script>
+    <script>
+        let hoje = new Date(); //let - escopo de bloco
+        let n1 = new Negociacao(hoje, 5, 700); //new é o responsável pelo this de cada objeto criado
+        console.log(n1.data);
+
+    </script>
 </body>
 </html>
