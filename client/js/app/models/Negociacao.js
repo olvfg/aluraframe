@@ -2,11 +2,11 @@
 
 class Negociacao {
 
-    constructor(data, quantidade, valor) {
+    constructor(data, quantidade, valor) { //onde definimos atributos
         this._data = new Date(data.getTime()); //this = variável implicita | _ atributos nao podem ser alterados
         this._quantidade = quantidade;
         this._valor = valor;
-        Object.freeze(this);
+        Object.freeze(this); //Congelar objeto depois de criado (shallow)
     }
 
     get volume() { //método (função dentro de uma classe)
